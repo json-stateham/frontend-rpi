@@ -1,0 +1,48 @@
+@import '@/styles/vars.scss';
+
+.button {
+  color: $clr-white;
+  border: 1px solid transparent;
+  transition: all 200ms ease-out;
+  cursor: pointer;
+}
+
+.m {
+  height: 50px;
+  width: 100%;
+  border-radius: $border-radius-8;
+}
+
+.s {
+  height: 40px;
+  border-radius: $border-radius-4;
+}
+
+@mixin button-color-behavior($color) {
+  &:hover {
+    background: darken($color: $color, $amount: 3);
+  }
+
+  &:focus {
+    border: 1px solid darken($color: $color, $amount: 50);
+  }
+
+  &:active {
+    color: darken($color: $clr-white, $amount: 10);
+  }
+}
+
+.primary {
+  background-color: $clr-blue-2;
+  @include button-color-behavior($clr-blue-2);
+}
+
+.secondary {
+  background-color: $clr-red-1;
+  @include button-color-behavior($clr-red-1);
+}
+
+.tertiary {
+  background-color: $clr-red-2;
+  @include button-color-behavior($clr-red-2);
+}

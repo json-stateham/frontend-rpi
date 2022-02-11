@@ -1,0 +1,22 @@
+@import './vars';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  height: inherit;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: $clr-black;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,18 @@
+@import '@/styles/vars';
+
+.secondary {
+  color: $clr-blue-2;
+
+  &:hover {
+    color: darken($color: $clr-blue-2, $amount: 20);
+  }
+
+  &:focus {
+    outline: 1px solid darken($color: $clr-blue-2, $amount: 20);
+  }
+}
+
+.active {
+  color: $clr-blue-2;
+  text-decoration: underline;
+}

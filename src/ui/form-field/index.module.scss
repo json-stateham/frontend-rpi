@@ -1,0 +1,48 @@
+@import '@/styles/vars';
+
+.input {
+  display: flex;
+  padding-left: 18px 12px;
+  height: 50px;
+  border-radius: $border-radius-4;
+  border: 2px solid $clr-grey-1;
+  transition: 300ms ease-out;
+
+  &:focus-within {
+    border: 2px solid $clr-blue-2;
+
+    svg {
+      fill: $clr-blue-2;
+    }
+  }
+
+  &:hover {
+    border: 2px solid $clr-blue-1;
+
+    svg {
+      transition: 300ms ease-out;
+      fill: $clr-blue-1;
+    }
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    padding-left: 14px;
+    
+    &:focus {
+      outline: none;
+      color: $clr-blue-2;
+    }
+  }
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.error {
+  color: $clr-red-1;
+}

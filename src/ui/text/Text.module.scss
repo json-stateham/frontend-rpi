@@ -1,0 +1,21 @@
+
+@import '@/styles/mixins';
+@import '@/styles/vars';
+
+.h1 {
+  @include fluid(font-size, 28, 36);
+  @include fluid(line-height, 32, 42);
+}
+
+.p,
+.span {
+  @include fluid(font-size, 14, 16);
+}
+
+.primary {
+  color: $clr-black;
+}
+
+.secondary {
+  color: $clr-grey-1;
+}

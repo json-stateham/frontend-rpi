@@ -1,11 +1,12 @@
-## React & Typecript Starterpack
+## React Typecript exercise
 
-* React for UI
+* React (Custom UI components) with lazy loading
+* React-router-dom (Routing)
+* Formik and Yup for handling forms state
 * Vite and Rollup plugins for bundling [https://vitejs.dev/]
 * SCSS-Modules & CLSX for styles
-* Jest and React-Testing-Library for tests
 
-Start dev: `yarn run dev`  
-Run build: `yarn run build`  
-
-when build is completed, open stats.html in root folder to check bundled chunks
+Run project: 
+* `npm install`  
+* `yarn run dev`  
+* `open browser http://localhost:3000`
